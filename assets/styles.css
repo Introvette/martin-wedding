@@ -11,7 +11,11 @@ body {
     background-color: #e8e4d6;
     margin: 0;
     font-family: 'Zilla Slab', serif;
- 
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
 }
 
 .main-container {
@@ -26,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; 
+
 }
 
 .home-pic-container {
@@ -34,11 +39,11 @@ body {
     justify-content: right;
     margin-bottom: 20px; 
     max-width: 400px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 img {
-    width: 100%; 
+    width: 90%; 
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
@@ -48,6 +53,7 @@ img {
     flex: 1;
     padding-left: 20px;
     max-width: 400px;
+    display: inline-block;
 }
 
 .main-text {
@@ -60,9 +66,9 @@ img {
     background-color: #4682b2;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
-    padding: 10px;
+    padding: 5px;
     width: 90%;
-    height: 80%;
+    height: 70%;
 }
 
 #countdown {
@@ -75,6 +81,7 @@ img {
     font-family: 'Lobster Two', cursive;
     font-size: 28px;
     color: white;
+    
 }
 
 /* Media query for mobile */
@@ -96,6 +103,7 @@ img {
     .text-countdown {
         width: 100%; 
         margin-bottom: 20px;
+        justify-content: center;
     }
 
     .text-countdown {

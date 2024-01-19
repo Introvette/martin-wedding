@@ -1,3 +1,4 @@
+//  countdown timer
 // Set the date we're counting down to
 var countDownDate = new Date("June 28, 2025 00:00:00").getTime();
 
@@ -26,3 +27,21 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // mobile nav menu
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', function () {
+        navLinks.classList.toggle('show');
+    });
+
+    // footer
+    const currentYearSpan = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    currentYearSpan.textContent = currentYear;
+});

@@ -1,35 +1,205 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two&family=Satisfy&family=Zilla+Slab&display=swap');
+
+
 html {
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     font-family: Arial, sans-serif;
-    background-color: #4682b2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-color: #e8e4d6;
     margin: 0;
-  }
+    font-family: 'Zilla Slab', serif;
+ 
+}
 
-  .main-container {
-    background: #e8e4d6;
-    max-width: 3000px;
-    height: 100vh;
-    width: 60%;
+.main-container {
+    background: #ffffff;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.home-pic-container {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px; 
+    max-width: 400px;
+    padding-top: 30px;
+}
+
+img {
+    width: 100%; 
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
+}
+
+.text-countdown {
+    flex: 1;
+    padding-left: 20px;
+    max-width: 400px;
+}
+
+.main-text {
+    background-color: #fff;
+    width: 80%;
+}
+
+#countdown-container {
+    text-align: center;
+    background-color: #4682b2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+#countdown {
+    font-size: 32px;
+    font-family: 'Zilla Slab', serif;
+    color: #ffffff;
+}
+
+.countdown-text {
+    font-family: 'Lobster Two', cursive;
+    font-size: 28px;
+    color: white;
+}
+
+/* Media query for mobile */
+@media only screen and (max-width: 600px) {
+    .top-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-pic-container,
+    .text-countdown {
+        width: 80%; 
+       
+    }
+
+    .text-countdown {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-countdown p {
+        text-align: center;
+    }
+}
+
+
+/* nav menu */
+
+header {
+    background-color: #4682b2;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Lobster Two', cursive;
+}
+
+nav {
+    display: flex;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+    font-size: 18px;
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #747474;
+}
+
+/* mobile nav */
+@media only screen and (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.show {
+        display: flex;
+        width: 25%
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-links {
+        max-width: 30%;
+        margin: 0 auto;
+        left: 77.5%;
+        transform: translateX(-50%);
+    }
+}
+
+/* footer styles */
+
+footer {
+    background-color: #4682b2;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #countdown-container {
-    text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-
-  #countdown {
-    font-size: 36px;
-    color: #333;
-  }
+    bottom: 0;
+    width: 100%;
+}

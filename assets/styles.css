@@ -52,7 +52,7 @@ img {
 
 .main-text {
     background-color: #fff;
-    width: 80%;
+    width: 90%;
 }
 
 #countdown-container {
@@ -61,7 +61,7 @@ img {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
     padding: 10px;
-    width: 80%;
+    width: 90%;
     height: 80%;
 }
 
@@ -79,17 +79,23 @@ img {
 
 /* Media query for mobile */
 @media only screen and (max-width: 600px) {
+   
+    .main-container {
+        margin-bottom: 20px;
+    }
+    
     .top-container {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 20px;
     }
 
     .home-pic-container,
     .text-countdown {
-        width: 80%; 
-       
+        width: 100%; 
+        margin-bottom: 20px;
     }
 
     .text-countdown {
@@ -102,6 +108,7 @@ img {
     .text-countdown p {
         text-align: center;
     }
+    
 }
 
 

@@ -1,25 +1,23 @@
-//  countdown timer
+// Countdown timer
 // Set the date we're counting down to
 var countDownDate = new Date("June 28, 2025 00:00:00").getTime();
 
 // Update the countdown every 1 second
-var x = setInterval(function() {
-  
+var x = setInterval(function () {
   // Get the current date and time
   var now = new Date().getTime();
 
   // Calculate the time remaining
   var distance = countDownDate - now;
 
-  // Calculate days, hours, minutes, and seconds
+  // Calculate days, hours, and minutes (removed seconds)
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the countdown
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // Display the countdown without seconds
+  document.getElementById("countdown").innerHTML =
+    days + "d " + hours + "h " + minutes + "m ";
 
   // If the countdown is over, display a message
   if (distance < 0) {
@@ -28,20 +26,17 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+document.addEventListener("DOMContentLoaded", function () {
+  // mobile nav menu
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".nav-links");
 
+  menuIcon.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
 
-document.addEventListener('DOMContentLoaded', function () {
-
-    // mobile nav menu
-    const menuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuIcon.addEventListener('click', function () {
-        navLinks.classList.toggle('show');
-    });
-
-    // footer
-    const currentYearSpan = document.getElementById('currentYear');
-    const currentYear = new Date().getFullYear();
-    currentYearSpan.textContent = currentYear;
+  // footer
+  const currentYearSpan = document.getElementById("currentYear");
+  const currentYear = new Date().getFullYear();
+  currentYearSpan.textContent = currentYear;
 });

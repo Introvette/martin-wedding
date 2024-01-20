@@ -62,6 +62,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .home-pic-container {
@@ -89,7 +90,7 @@ h2 {
 
 .main-text {
   background-color: #fff;
-  width: 100%;
+  width: 90%;
 }
 
 #countdown-container {
@@ -98,7 +99,7 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 0 15px #bda0bc;
   padding: 5px;
-  width: 100%;
+  width: 90%;
   height: 70%;
 }
 

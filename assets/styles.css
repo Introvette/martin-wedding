@@ -3,7 +3,7 @@
 
 html {
   box-sizing: border-box;
-  background-image: url("/assets/photos/background.png");
+  background-image: url("../assets/photos/background.png");
   background-size: 600px 300px;
   background-repeat: repeat;
 }

@@ -251,13 +251,16 @@ nav {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
-  width: 200px;
+  width: 160px;
   text-align: center;
+  box-shadow: 0 0 15px #bda0bc;
+  border-radius: 40px;
 }
 
 .card img {
   max-width: 100%;
   height: auto;
+  border-radius: 40px;
 }
 
 /* footer styles */

@@ -45,13 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const bridesmaidsData = [
     {
-      name: "Celeste",
-      photo: "/assets/photos/celeste.jpeg",
-      description: "Bridesmaid",
+      name: "Amorita",
+      photo: "./assets/photos/amorita.jpeg",
+      description: "Maid of Honor",
     },
     {
       name: "Jurysia",
-      photo: "/assets/photos/rysia.jpg",
+      photo: "./assets/photos/rysia.jpg",
+      description: "Bridesmaid",
+    },
+    {
+      name: "Celeste",
+      photo: "./assets/photos/celeste.jpeg",
       description: "Bridesmaid",
     },
     {
@@ -60,11 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "Bridesmaid",
     },
     { name: "Person 4", photo: "photo4.jpg", description: "Description 4" },
-    {
-      name: "Amorita",
-      photo: "../assets/photos/amorita.png",
-      description: "Maid of Honor",
-    },
   ];
 
   const partyGirlsDiv = document.querySelector(".party-girls");
@@ -76,29 +76,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const groomsmenData = [
     {
+      name: "Drake",
+      photo: "groom5.jpg",
+      description: "Best Man",
+    },
+    {
       name: "Alex",
-      photo: "/assets/photos/alex.jpeg",
+      photo: "./assets/photos/alex.jpeg",
       description: "Groomsman",
     },
     {
       name: "King",
-      photo: "/assets/photos/king.jpeg",
+      photo: "./assets/photos/king.jpeg",
       description: "Groomsman",
     },
     {
       name: "Jay",
-      photo: "/assets/photos/jay.jpeg",
+      photo: "./assets/photos/jay.jpeg",
       description: "Groomsman",
     },
     {
       name: "Groomsmen 4",
       photo: "groom4.jpg",
       description: "Groomsmen Description 4",
-    },
-    {
-      name: "Drake",
-      photo: "groom5.jpg",
-      description: "Best Man",
     },
   ];
 

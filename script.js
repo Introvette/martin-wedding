@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "Nia",
-      photo: "/assets/photos/nia.jpeg",
+      photo: "./assets/photos/nia.jpeg",
       description: "Bridesmaid",
     },
     { name: "Person 4", photo: "photo4.jpg", description: "Description 4" },
     {
       name: "Amorita",
-      photo: "/assets/photos/amorita.png",
+      photo: "../assets/photos/amorita.png",
       description: "Maid of Honor",
     },
   ];

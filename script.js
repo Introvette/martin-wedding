@@ -40,3 +40,101 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentYear = new Date().getFullYear();
   currentYearSpan.textContent = currentYear;
 });
+
+// wedding party cards
+document.addEventListener("DOMContentLoaded", function () {
+  const bridesmaidsData = [
+    {
+      name: "Celeste",
+      photo: "/assets/photos/celeste.jpeg",
+      description: "Bridesmaid",
+    },
+    {
+      name: "Jurysia",
+      photo: "/assets/photos/rysia.jpg",
+      description: "Bridesmaid",
+    },
+    {
+      name: "Nia",
+      photo: "/assets/photos/nia.jpeg",
+      description: "Bridesmaid",
+    },
+    { name: "Person 4", photo: "photo4.jpg", description: "Description 4" },
+    {
+      name: "Amorita",
+      photo: "/assets/photos/amorita.png",
+      description: "Maid of Honor",
+    },
+  ];
+
+  const partyGirlsDiv = document.querySelector(".party-girls");
+
+  const bridesmaidsContainer = createCardContainer();
+  partyGirlsDiv.appendChild(bridesmaidsContainer);
+
+  generateCards(bridesmaidsData, bridesmaidsContainer);
+
+  const groomsmenData = [
+    {
+      name: "Alex",
+      photo: "/assets/photos/alex.jpeg",
+      description: "Groomsman",
+    },
+    {
+      name: "King",
+      photo: "/assets/photos/king.jpeg",
+      description: "Groomsman",
+    },
+    {
+      name: "Jay",
+      photo: "/assets/photos/jay.jpeg",
+      description: "Groomsman",
+    },
+    {
+      name: "Groomsmen 4",
+      photo: "groom4.jpg",
+      description: "Groomsmen Description 4",
+    },
+    {
+      name: "Drake",
+      photo: "groom5.jpg",
+      description: "Best Man",
+    },
+  ];
+
+  const partyBoysDiv = document.querySelector(".party-boys");
+
+  const groomsmenContainer = createCardContainer();
+  partyBoysDiv.appendChild(groomsmenContainer);
+
+  generateCards(groomsmenData, groomsmenContainer);
+
+  function createCardContainer() {
+    const container = document.createElement("div");
+    container.classList.add("card-container");
+    return container;
+  }
+
+  function generateCards(data, container) {
+    data.forEach((member) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      const image = document.createElement("img");
+      image.src = member.photo;
+      image.alt = member.name;
+
+      const name = document.createElement("h3");
+      name.textContent = member.name;
+
+      const description = document.createElement("p");
+      description.textContent = member.description;
+
+      card.appendChild(image);
+      card.appendChild(name);
+      card.appendChild(description);
+
+      container.appendChild(card);
+    });
+  }
+});

@@ -138,3 +138,57 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// hotel cards
+document.addEventListener("DOMContentLoaded", function () {
+  const hotelData = [
+    {
+      name: "Hotel 1",
+      photo: "hotel.jpg",
+      website: "https://hotel.com",
+    },
+    {
+      name: "Hotel 2",
+      photo: "hotel.jpg",
+      website: "https://hotel.com",
+    },
+    {
+      name: "Hotel 3",
+      photo: "hotel.jpg",
+      website: "https://hotel.com",
+    },
+  ];
+
+  const hotelContainer = document.getElementById("hotel-container");
+
+  generateHotelCards(hotelData, hotelContainer);
+
+  function generateHotelCards(data, container) {
+    data.forEach((hotel) => {
+      const card = document.createElement("div");
+      card.classList.add("hotel-card");
+
+      const name = document.createElement("h2");
+      name.textContent = hotel.name;
+
+      const image = document.createElement("img");
+      image.src = hotel.photo;
+      image.alt = `${hotel.name} Photo`;
+
+      const websiteHeader = document.createElement("h3");
+      websiteHeader.textContent = "Website";
+
+      const websiteLink = document.createElement("a");
+      websiteLink.href = hotel.website;
+      websiteLink.target = "_blank";
+      websiteLink.textContent = `${hotel.name} Website`;
+
+      card.appendChild(name);
+      card.appendChild(image);
+      card.appendChild(websiteHeader);
+      card.appendChild(websiteLink);
+
+      container.appendChild(card);
+    });
+  }
+});

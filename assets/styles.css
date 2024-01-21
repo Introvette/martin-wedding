@@ -17,10 +17,17 @@ body {
 h2 {
   font-family: "Lobster Two", cursive;
   text-align: center;
+  text-shadow: 1px 4px 4px #4682b2;
+}
+
+h1 {
+  font-family: "Zilla Slab", cursive;
+  text-align: center;
+  color: #000000;
+  text-shadow: 1px 2px 5px #4682b2;
 }
 
 /* buttons */
-
 .rsvp-button button {
   display: block;
   margin-left: auto;
@@ -268,4 +275,54 @@ footer {
   color: #4682b2;
   text-align: center;
   padding: 10px;
+}
+
+/* details page styles */
+.details {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+}
+
+.venue-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #333;
+}
+
+.venue-card img {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #333;
+}
+
+#venue-container,
+#hotel-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.hotel-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #333;
+}
+
+.hotel-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #333;
 }

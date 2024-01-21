@@ -64,7 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
       photo: "./assets/photos/nia.jpeg",
       description: "Bridesmaid",
     },
-    { name: "Person 4", photo: "photo4.jpg", description: "Description 4" },
+    {
+      name: "Bridesmaid",
+      photo: "./assets/photos/place-holder.png",
+      description: "Bridesmaid",
+    },
   ];
 
   const partyGirlsDiv = document.querySelector(".party-girls");
@@ -77,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const groomsmenData = [
     {
       name: "Drake",
-      photo: "groom5.jpg",
+      photo: "./assets/photos/place-holder2.png",
       description: "Best Man",
     },
     {
@@ -96,9 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "Groomsman",
     },
     {
-      name: "Groomsmen 4",
-      photo: "groom4.jpg",
-      description: "Groomsmen Description 4",
+      name: "Groomsman #4",
+      photo: "./assets/photos/place-holder.png",
+      description: "Groomsman",
     },
   ];
 

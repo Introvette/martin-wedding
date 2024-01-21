@@ -39,6 +39,9 @@ h1 {
   font-family: "Zilla Slab", serif;
   border-color: transparent;
   box-shadow: 6px 6px 16px 2px rgba(189, 160, 188, 1);
+  width: 250px;
+  font-size: 20px;
+  font-family: "Lobster Two", cursive;
 }
 
 .rsvp-button {
@@ -70,6 +73,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 20px;
 }
 
 .home-pic-container {
@@ -277,7 +281,7 @@ footer {
   padding: 10px;
 }
 
-/* details page styles */
+/* venue page styles */
 .details {
   text-align: center;
   padding: 20px;
@@ -325,4 +329,43 @@ footer {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 8px #333;
+}
+
+/* rsvp page */
+.rsvp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rsvp-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.text-column {
+  text-align: center;
+}
+
+.message {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
 }

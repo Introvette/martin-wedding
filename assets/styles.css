@@ -4,7 +4,7 @@
 html {
   box-sizing: border-box;
   background-image: url("../assets/photos/background.png");
-  background-size: 600px 300px;
+  background-size: 500px 500px;
   background-repeat: repeat;
 }
 
@@ -65,6 +65,8 @@ h1 {
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
+  /* box-shadow: 3px 6px 16px rgb(0, 0, 0); */
+  box-shadow: -3px 4px 16px rgb(0, 0, 0), 3px 4px 16px rgb(0, 0, 0);
 }
 
 .top-container {

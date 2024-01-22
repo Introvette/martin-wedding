@@ -437,3 +437,30 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+/* details page */
+.details-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.venue-photo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.venue-photo img {
+  max-width: 100%;
+}
+
+.details-desc {
+  flex: 1;
+}
+
+
+
+
+
+
+
+

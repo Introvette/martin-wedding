@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hotelData = [
     {
       name: "Hampton Inn & Suites Lenoir",
-      photo: "./assets/photos/hamptonlenoir.png",
+      photo: "../assets/photos/hamptonlenoir.png",
       website:
         "https://www.hilton.com/en/hotels/cltlrhx-hampton-suites-lenoir/",
       distance: "16 miles",
@@ -156,21 +156,21 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "Comfort Inn & Suites Lenoir",
-      photo: "./assets/photos/comfortlenoir.png",
+      photo: "../assets/photos/comfortlenoir.png",
       website: "https://hotel.com",
       distance: "16 miles",
       rating: "4.5 Stars",
     },
     {
       name: "Red Roof Inn Lenoir",
-      photo: "./assets/photos/redrooflenoir.png",
+      photo: "../assets/photos/redrooflenoir.png",
       website: "https://hotel.com",
       distance: "15 miles",
       rating: "3.5 Stars",
     },
     {
       name: "Hampton Inn Morganton",
-      photo: "./assets/photos/hamptonmorganton.png",
+      photo: "../assets/photos/hamptonmorganton.png",
       website: "https://hotel.com",
       distance: "21 Miles",
       rating: "4.5 Stars",
@@ -214,4 +214,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-//★★★★
+

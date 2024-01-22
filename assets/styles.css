@@ -283,8 +283,16 @@ footer {
   padding: 10px;
 }
 
-/* venue page styles */
-.details {
+/* page styles */
+.page-title {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.home-title {
   text-align: center;
   padding: 20px;
   background-color: #f2f2f2;

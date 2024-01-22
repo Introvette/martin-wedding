@@ -147,19 +147,33 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const hotelData = [
     {
-      name: "Hotel 1",
-      photo: "hotel.jpg",
-      website: "https://hotel.com",
+      name: "Hampton Inn & Suites Lenoir",
+      photo: "./assets/photos/hamptonlenoir.png",
+      website:
+        "https://www.hilton.com/en/hotels/cltlrhx-hampton-suites-lenoir/",
+      distance: "16 miles",
+      rating: "4.5 Stars",
     },
     {
-      name: "Hotel 2",
-      photo: "hotel.jpg",
+      name: "Comfort Inn & Suites Lenoir",
+      photo: "./assets/photos/comfortlenoir.png",
       website: "https://hotel.com",
+      distance: "16 miles",
+      rating: "4.5 Stars",
     },
     {
-      name: "Hotel 3",
-      photo: "hotel.jpg",
+      name: "Red Roof Inn Lenoir",
+      photo: "./assets/photos/redrooflenoir.png",
       website: "https://hotel.com",
+      distance: "15 miles",
+      rating: "3.5 Stars",
+    },
+    {
+      name: "Hampton Inn Morganton",
+      photo: "./assets/photos/hamptonmorganton.png",
+      website: "https://hotel.com",
+      distance: "21 Miles",
+      rating: "4.5 Stars",
     },
   ];
 
@@ -177,22 +191,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const image = document.createElement("img");
       image.src = hotel.photo;
-      image.alt = `${hotel.name} Photo`;
+      image.alt = `${hotel.name}`;
 
-      const websiteHeader = document.createElement("h3");
-      websiteHeader.textContent = "Website";
-
-      const websiteLink = document.createElement("a");
+      const websiteLink = document.createElement("button");
       websiteLink.href = hotel.website;
       websiteLink.target = "_blank";
-      websiteLink.textContent = `${hotel.name} Website`;
+      websiteLink.textContent = "Website";
+
+      const distance = document.createElement("p");
+      distance.textContent = "Distance from venue: " + `${hotel.distance}`;
+
+      const rating = document.createElement("i");
+      rating.textContent = hotel.rating;
 
       card.appendChild(name);
       card.appendChild(image);
-      card.appendChild(websiteHeader);
       card.appendChild(websiteLink);
+      card.appendChild(distance);
+      card.appendChild(rating);
 
       container.appendChild(card);
     });
   }
 });
+//★★★★

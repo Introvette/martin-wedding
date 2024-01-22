@@ -1,5 +1,6 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster+Two&family=Satisfy&family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&family=Merriweather+Sans:wght@400;500&family=Oswald&display=swap");
 
 html {
   box-sizing: border-box;
@@ -9,22 +10,66 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   font-family: "Zilla Slab", serif;
 }
 
 h2 {
-  font-family: "Lobster Two", cursive;
+  font-family: "Zilla Slab", serif;
   text-align: center;
   text-shadow: 1px 4px 4px #4682b2;
 }
 
 h1 {
-  font-family: "Zilla Slab", cursive;
+  font-family: "Cedarville Cursive", cursive;
   text-align: center;
   color: #000000;
   text-shadow: 1px 2px 5px #4682b2;
+  font-size: 2.5em;
+}
+
+/* home header */
+.start-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-image {
+  order: 1;
+  position: relative;
+}
+
+.bg {
+  order: 2;
+  margin-top: -50px;
+}
+
+.bg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.stacked-text {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 4.5em;
+  color: #6b6b6b;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 /* buttons */
@@ -36,12 +81,11 @@ h1 {
   margin-top: 15px;
   background: transparent;
   border-radius: 5px;
-  font-family: "Zilla Slab", serif;
   border-color: transparent;
   box-shadow: 6px 6px 16px 2px rgba(189, 160, 188, 1);
   width: 250px;
   font-size: 20px;
-  font-family: "Lobster Two", cursive;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 .rsvp-button {
@@ -49,7 +93,6 @@ h1 {
 }
 
 /* home styles */
-
 .location {
   text-align: center;
   padding-top: 20px;
@@ -123,7 +166,7 @@ h1 {
 }
 
 .countdown-text {
-  font-family: "Lobster Two", cursive;
+  font-family: "Cedarville Cursive", cursive;
   font-size: 28px;
   color: white;
 }
@@ -332,6 +375,7 @@ footer {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 0 15px #333;
+  text-decoration-line: none;
 }
 
 .hotel-card img {
@@ -339,6 +383,22 @@ footer {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 8px #333;
+  margin-bottom: 10px;
+}
+
+.hotel-card button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 15px;
+  background: transparent;
+  border-radius: 5px;
+  font-family: "Cedarville Cursive", cursive;
+  border-color: transparent;
+  box-shadow: 6px 6px 16px 2px rgba(189, 160, 188, 1);
+  width: 150px;
+  font-size: 20px;
 }
 
 /* rsvp page */

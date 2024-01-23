@@ -203,7 +203,6 @@ h1 {
 }
 
 /* nav menu */
-
 header {
   background-color: #9ec1a3;
   padding: 15px;
@@ -224,6 +223,7 @@ nav {
   display: none;
 }
 
+.homepage-nav,
 .nav-links {
   list-style: none;
   display: flex;
@@ -232,8 +232,19 @@ nav {
   font-size: 18px;
 }
 
+.homepage-nav li {
+  margin-right: 15px;
+}
+
 .nav-links li {
   margin-right: 15px;
+}
+
+.homepage-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links a {
@@ -243,11 +254,55 @@ nav {
   transition: color 0.3s ease;
 }
 
+.homepage-nav,
 .nav-links a:hover {
   color: #747474;
 }
 
-/* mobile nav */
+/* home mobile nav */
+@media only screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .homepage-nav {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9ec1a3;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .homepage-nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homepage-nav li {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .homepage-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .homepage-nav a:hover {
+    color: #747474;
+  }
+}
+
+/* mobile nav other pages */
 @media only screen and (max-width: 600px) {
   .menu-icon {
     display: block;
@@ -257,16 +312,20 @@ nav {
     display: none;
     flex-direction: column;
     text-align: left;
-    width: 100%;
+    width: 70%;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #333;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9ec1a3;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .nav-links.show {
     display: flex;
-    width: 25%;
+    flex-direction: column;
   }
 
   .nav-links li {
@@ -274,11 +333,15 @@ nav {
     padding: 10px;
   }
 
-  .nav-links {
-    max-width: 30%;
-    margin: 0 auto;
-    left: 77.5%;
-    transform: translateX(-50%);
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #747474;
   }
 }
 
@@ -327,7 +390,7 @@ footer {
 /* page styles */
 .page-title {
   text-align: center;
-  padding: 20px;
+  /* padding: 5px; */
   background-color: #f2f2f2;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -335,7 +398,7 @@ footer {
 
 .home-title {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: #f2f2f2;
   margin-top: 20px;
 }
@@ -451,16 +514,9 @@ footer {
 
 .venue-photo img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 .details-desc {
   flex: 1;
 }
-
-
-
-
-
-
-
-

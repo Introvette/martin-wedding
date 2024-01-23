@@ -29,10 +29,11 @@ var x = setInterval(function () {
 document.addEventListener("DOMContentLoaded", function () {
   // mobile nav menu
   const menuIcon = document.querySelector(".menu-icon");
-  const navLinks = document.querySelector(".nav-links");
+  const homeLinks = document.querySelector(".homepage-nav");
 
   menuIcon.addEventListener("click", function () {
-    navLinks.classList.toggle("show");
+    console.log("Menu icon clicked");
+    homeLinks.classList.toggle("show");
   });
 
   // footer
@@ -41,32 +42,42 @@ document.addEventListener("DOMContentLoaded", function () {
   currentYearSpan.textContent = currentYear;
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  // mobile nav menu
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuIcon.addEventListener("click", function () {
+    navLinks.classList.toggle("show");
+  });
+});
+
 // wedding party cards
 document.addEventListener("DOMContentLoaded", function () {
   const bridesmaidsData = [
     {
       name: "Amorita",
-      photo: "./assets/photos/amorita.jpeg",
+      photo: "../assets/photos/amorita.jpeg",
       description: "Maid of Honor",
     },
     {
       name: "Jurysia",
-      photo: "./assets/photos/rysia.jpg",
+      photo: "../assets/photos/rysia.jpg",
       description: "Bridesmaid",
     },
     {
       name: "Celeste",
-      photo: "./assets/photos/celeste.jpeg",
+      photo: "../assets/photos/celeste.jpeg",
       description: "Bridesmaid",
     },
     {
       name: "Nia",
-      photo: "./assets/photos/nia.jpeg",
+      photo: "../assets/photos/nia.jpeg",
       description: "Bridesmaid",
     },
     {
       name: "Bridesmaid",
-      photo: "./assets/photos/place-holder.png",
+      photo: "../assets/photos/place-holder.png",
       description: "Bridesmaid",
     },
   ];
@@ -81,27 +92,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const groomsmenData = [
     {
       name: "Drake",
-      photo: "./assets/photos/place-holder2.png",
+      photo: "../assets/photos/place-holder2.png",
       description: "Best Man",
     },
     {
       name: "Alex",
-      photo: "./assets/photos/alex.jpeg",
+      photo: "../assets/photos/alex.jpeg",
       description: "Groomsman",
     },
     {
       name: "King",
-      photo: "./assets/photos/king.jpeg",
+      photo: "../assets/photos/king.jpeg",
       description: "Groomsman",
     },
     {
       name: "Jay",
-      photo: "./assets/photos/jay.jpeg",
+      photo: "../assets/photos/jay.jpeg",
       description: "Groomsman",
     },
     {
       name: "Groomsman #4",
-      photo: "./assets/photos/place-holder.png",
+      photo: "../assets/photos/place-holder.png",
       description: "Groomsman",
     },
   ];
@@ -214,4 +225,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-

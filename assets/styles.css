@@ -254,8 +254,13 @@ nav {
   transition: color 0.3s ease;
 }
 
-.homepage-nav,
+
 .nav-links a:hover {
+  color: #747474;
+}
+
+.homepage-nav
+ a:hover {
   color: #747474;
 }
 
@@ -403,22 +408,35 @@ footer {
   margin-top: 20px;
 }
 
+#venue-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .venue-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #333;
+  max-width: 900px;
+}
+
+.content-container {
+  display: flex;
 }
 
 .venue-card img {
-  width: 75%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 8px #333;
+  max-width: 60%; 
 }
+
+.venue-text {
+  flex: 1; 
+  padding: 0 20px; 
+}
+
+.details {
+  margin-top: 10px; 
+}
+
+
+
 
 #venue-container,
 #hotel-container {
@@ -520,3 +538,4 @@ footer {
 .details-desc {
   flex: 1;
 }
+

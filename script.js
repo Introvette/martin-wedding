@@ -1,8 +1,8 @@
 // Countdown timer
 // Set the date we're counting down to
-var countDownDate = new Date("June 28, 2025 00:00:00").getTime();
+var countDownDate = new Date("June 28, 2025 17:30:00").getTime();
 
-// Update the countdown every 1 second
+// Update the countdown every 1 minute
 var x = setInterval(function () {
   // Get the current date and time
   var now = new Date().getTime();
@@ -17,7 +17,7 @@ var x = setInterval(function () {
 
   // Display the countdown without seconds
   document.getElementById("countdown").innerHTML =
-    days + "d " + hours + "h " + minutes + "m ";
+    days + " days " + hours + " hrs " + minutes + " min ";
 
   // If the countdown is over, display a message
   if (distance < 0) {
@@ -76,6 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "Bridesmaid",
     },
     {
+      name: "Aerial",
+      photo: "../assets/photos/place-holder2.png",
+      description: "Bridesmaid",
+    },
+    {
+      name: "Bridesmaid",
+      photo: "../assets/photos/place-holder.png",
+      description: "Bridesmaid",
+    },
+    {
       name: "Bridesmaid",
       photo: "../assets/photos/place-holder.png",
       description: "Bridesmaid",
@@ -111,7 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "Groomsman",
     },
     {
-      name: "Groomsman #4",
+      name: "Groomsman",
+      photo: "../assets/photos/place-holder.png",
+      description: "Groomsman",
+    },
+    {
+      name: "Groomsman",
       photo: "../assets/photos/place-holder.png",
       description: "Groomsman",
     },

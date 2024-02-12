@@ -7,7 +7,7 @@
     <title>Martin Wedding</title>
   </head>
   <body>
-    <script src="../script.js"></script>
+    
     <div class="main-container">
       <!-- start nav menu -->
       <header>
@@ -28,29 +28,30 @@
   <h1>Location</h1>
 </div>
 
-<div id="venue-container">
-  <div class="venue-card">
-    <h2>Brown Mountain Beach Resort</h2>
-    <h2>Lenoir, NC</h2>
-    <div class="content-container">
-      <img src="../assets/photos/venue.jpeg" alt="Venue Photo">
-      <div class="venue-text">
-        
-        <div class="details">
-          <h4>Dress Code: Semi-formal</h4>
-          <h3>Provided for Ceremony:</h3>
-          <ul>
-            <li>Sunscreen</li>
-            <li>Water</li>
-            <li>Fans</li>
-          </ul>
-        </div>
-        <p>Brown Mountain Beach Resort in Lenoir, NC, is a charming riverside retreat nestled along the Wilson Creek. Surrounded by the picturesque Pisgah National Forest, the resort offers outdoor activities, and a serene escape for nature enthusiasts.</p>
-      </div>
-    </div>
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="../assets/photos/venue.jpeg" style="width:100%">
   </div>
+
+  <div class="mySlides">
+    <img src="../assets/photos/slideshow1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="../assets/photos/slideshow2.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="../script.js"></script>
 
 <div id="hotel-container"></div>
 

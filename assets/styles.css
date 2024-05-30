@@ -106,45 +106,40 @@ h1 {
   max-width: 80%;
   margin: 0 auto;
   padding: 20px;
-  /* box-shadow: 3px 6px 16px rgb(0, 0, 0); */
   box-shadow: -3px 4px 16px rgb(0, 0, 0), 3px 4px 16px rgb(0, 0, 0);
 }
 
 .top-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 20px;
 }
 
 .home-pic-container {
-  flex: 1;
-  display: flex;
-  justify-content: right;
-  margin-bottom: 20px;
-  max-width: 100%;
-  /* padding-top: 30px; */
+  flex: 3;
+  margin: 10px;
 }
 
 .home-pic-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
 }
 
 .text-countdown {
-  flex: 1;
-  padding-left: 20px;
-  max-width: 400px;
-  display: inline-block;
+  flex: 2;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-text {
   background-color: #fff;
   width: 90%;
+  margin-bottom: 20px;
 }
 
 #countdown-container {
@@ -154,7 +149,7 @@ h1 {
   box-shadow: 0 0 15px #bda0bc;
   padding: 5px;
   width: 90%;
-  height: 70%;
+  margin-bottom: 20px;
 }
 
 #countdown {
@@ -507,6 +502,12 @@ footer {
   align-items: center;
 }
 
+.rsvp-pic-container img {
+  width: 95%;
+  border-radius: 20px;
+  
+}
+
 .rsvp-container {
   background-color: #ffffff;
   border-radius: 10px;
@@ -519,7 +520,7 @@ footer {
 
 .image {
   max-width: 100%;
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 8px;

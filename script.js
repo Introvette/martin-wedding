@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "Mariah",
-      photo: "../assets/photos/celeste.jpeg",
+      photo: "../assets/photos/place-holder2.png",
       description: "Bridesmaid",
     },
     {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "Celeste",
-      photo: "../assets/photos/place-holder2.png",
+      photo: "../assets/photos/celeste.jpeg",
       description: "Bridesmaid",
     },
   ];

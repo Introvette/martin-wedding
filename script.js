@@ -71,23 +71,29 @@ document.addEventListener("DOMContentLoaded", function () {
       description: "Bridesmaid",
     },
     {
-      name: "Nia",
-      photo: "../assets/photos/nia.jpeg",
-      description: "Bridesmaid",
-    },
-    {
-      name: "Aerial",
-      photo: "../assets/photos/place-holder2.png",
-      description: "Bridesmaid",
-    },
-    {
       name: "Bri",
       photo: "../assets/photos/place-holder2.png",
       description: "Bridesmaid",
     },
     {
-      name: "Celeste",
-      photo: "../assets/photos/celeste.jpeg",
+      name: "Nia",
+      photo: "../assets/photos/nia.jpeg",
+      description: "Bridesmaid",
+    },
+
+    {
+      name: "Taylor",
+      photo: "../assets/photos/place-holder2.png",
+      description: "Bridesmaid",
+    },
+    {
+      name: "Ashley",
+      photo: "../assets/photos/place-holder2.png",
+      description: "Bridesmaid",
+    },
+    {
+      name: "Aerial",
+      photo: "../assets/photos/place-holder2.png",
       description: "Bridesmaid",
     },
   ];
@@ -135,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
       photo: "../assets/photos/place-holder2.png",
       description: "Groomsman",
     },
-    
   ];
 
   const partyBoysDiv = document.querySelector(".party-boys");
@@ -252,11 +257,11 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {

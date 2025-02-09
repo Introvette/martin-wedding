@@ -441,7 +441,7 @@ nav {
     position: absolute;
     top: 95%;
     left: 50%;
-    transform: translate(-50%, -282%);
+    transform: translate(-50%, -265%);
     background-color: #9ec1a3;
     z-index: 1;
     border-bottom-left-radius: 10px;
@@ -484,7 +484,7 @@ nav {
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
     background-color: #9ec1a3;
     z-index: 1;
     border-bottom-left-radius: 10px;

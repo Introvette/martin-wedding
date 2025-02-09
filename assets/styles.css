@@ -468,6 +468,12 @@ nav {
   .homepage-nav a:hover {
     color: #747474;
   }
+
+}
+
+a {
+  text-decoration: none;
+
 }
 
 /* mobile nav other pages */

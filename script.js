@@ -190,27 +190,34 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://www.hilton.com/en/hotels/cltlrhx-hampton-suites-lenoir/",
       distance: "16 miles",
       rating: "4.5 Stars",
+      hideDistance: false,
     },
     {
       name: "Comfort Inn & Suites Lenoir",
       photo: "../assets/photos/comfortlenoir.png",
-      website: "https://hotel.com",
+      website:
+        "https://www.choicehotels.com/north-carolina/lenoir/comfort-inn-hotels/nc291?mc=llgoxxpx",
       distance: "16 miles",
       rating: "4.5 Stars",
-    },
-    {
-      name: "Red Roof Inn Lenoir",
-      photo: "../assets/photos/redrooflenoir.png",
-      website: "https://hotel.com",
-      distance: "15 miles",
-      rating: "3.5 Stars",
+      hideDistance: false,
     },
     {
       name: "Hampton Inn Morganton",
       photo: "../assets/photos/hamptonmorganton.png",
-      website: "https://hotel.com",
+      website:
+        "https://www.hilton.com/en/hotels/mrnnchx-hampton-morganton/?SEO_id=GMB-AMER-HX-MRNNCHX&y_source=1_MjA4MjA2NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
       distance: "21 Miles",
       rating: "4.5 Stars",
+      hideDistance: false,
+    },
+    {
+      name: "Airbnb in Lenoir",
+      photo: "../assets/photos/airbnb.png",
+      website:
+        "https://www.airbnb.com/s/Lenoir--NC/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJB3om2mrfUIgRubk9usfwA5o&checkin=2025-06-26&checkout=2025-06-29&adults=2&query=Lenoir%2C%20NC&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2025-03-01&monthly_length=3&monthly_end_date=2025-06-01&search_mode=regular_search&price_filter_input_type=0&price_filter_num_nights=3&channel=EXPLORE&source=structured_search_input_header&search_type=filter_change",
+      distance: "",
+      rating: "",
+      hideDistance: true,
     },
   ];
 
@@ -230,13 +237,16 @@ document.addEventListener("DOMContentLoaded", function () {
       image.src = hotel.photo;
       image.alt = `${hotel.name}`;
 
-      const websiteLink = document.createElement("button");
-      websiteLink.href = hotel.website;
+      const websiteLink = document.createElement("a");
+      websiteLink.href = `${hotel.website}`;
       websiteLink.target = "_blank";
       websiteLink.textContent = "Website";
 
       const distance = document.createElement("p");
       distance.textContent = "Distance from venue: " + `${hotel.distance}`;
+      if (hotel.hideDistance) {
+        distance.style.display = "none";
+      }
 
       const rating = document.createElement("i");
       rating.textContent = hotel.rating;

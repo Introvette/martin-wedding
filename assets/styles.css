@@ -42,7 +42,6 @@ h1 {
   color: #4682b2;
 }
 
-
 /* home header */
 .start-image {
   display: flex;
@@ -103,7 +102,7 @@ h1 {
 }
 
 button a {
-color: black;
+  color: black;
 }
 
 .rsvp-button {
@@ -137,7 +136,8 @@ color: black;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: flex-start;
-  width: 100%;
+  max-width: 100%;
+  width: 90%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -151,6 +151,7 @@ color: black;
 
 .home-pic-container img {
   max-width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 20px;
 }
@@ -177,8 +178,10 @@ color: black;
   border-radius: 8px;
   box-shadow: 0 0 15px #bda0bc;
   padding: 5px;
-  width: 100%;
+  width: 90%;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #countdown {
@@ -193,21 +196,23 @@ color: black;
   color: white;
 }
 
-/* Mobile View Adjustments */
+/* Mobile View */
 @media only screen and (max-width: 600px) {
-  /* Stack items vertically */
   .top-container {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
+    width: 100%;
+    text-align: center;
   }
-
 
   .home-pic-container,
   .text-countdown {
-    width: 100%;
+    max-width: 600px;
     margin-bottom: 20px;
+    display: flex;
     justify-content: center;
   }
 
@@ -222,18 +227,6 @@ color: black;
   .text-countdown p {
     text-align: center;
   }
-}
-
-
-.top-container {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 100%; */
-
-
 }
 
 .rsvp-container {
@@ -468,12 +461,10 @@ nav {
   .homepage-nav a:hover {
     color: #747474;
   }
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 /* mobile nav other pages */
@@ -652,21 +643,19 @@ footer {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 0 8px #333;
   margin-bottom: 10px;
 }
 
-.hotel-card button {
+.hotel-card a {
   display: block;
   margin-left: auto;
+  border: 1px solid #bda0bc;
   margin-right: auto;
   padding: 10px;
   margin-top: 15px;
   background: transparent;
   border-radius: 5px;
-  font-family: font-family: "Zilla Slab", serif;
-  border-color: transparent;
-  box-shadow: 6px 6px 16px 2px rgba(189, 160, 188, 1);
+  font-family: "Zilla Slab", serif;
   width: 150px;
   font-size: 20px;
 }
